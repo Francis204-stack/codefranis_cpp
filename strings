@@ -1,0 +1,8 @@
+void main(){
+    var myName = "Francis";
+    print(myName);
+    print("The length of my name is ${myName.length}");
+
+    var myMoney = 10000;
+    print("My money is \$$myMoney");
+}
