@@ -1,9 +1,19 @@
 void main(){
     var myName = "Francis";
     print(myName);
+
+    //displaying the number of characters in my name
     print("The length of my name is ${myName.length}");
+
+    //displaying myName in uppper case letters
     print("The uppercase version of my name is ${myName.toUpperCase()}");
+
 
     var myMoney = 10000;
     print("My money is \$$myMoney");
+
+
+    var errorMessage = "Uxh oxh, thexre's a bunxch of txypos";
+    //replacing all the 'x' with a blank string
+    print(errorMessage.replaceAll('x', ''));
 }
