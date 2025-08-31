@@ -2,6 +2,7 @@ void main(){
     var myName = "Francis";
     print(myName);
     print("The length of my name is ${myName.length}");
+    print("The uppercase version of my name is ${myName.toUpperCase()}");
 
     var myMoney = 10000;
     print("My money is \$$myMoney");
