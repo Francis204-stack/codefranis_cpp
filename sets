@@ -1,0 +1,13 @@
+void main(){
+  //listing some elements in a set
+  var elements = {'O','K','Ni','Rd'};
+  print(elements);
+  
+  //adding one element to the set
+  elements.add('F');
+  print(elements);
+  
+  //adding various elements to the set
+  elements.addAll(['H','C','Ar','B']);
+  print(elements);
+}
