@@ -1,0 +1,10 @@
+void main(){
+  //set of students who are on a football team:
+  var footballTeam = {'Andrews','Zach','Calvin'};
+  
+  //set of students who are in the school play:
+  var playCast = {'David','Calvin','Stephen '};
+  
+  //finding students who are both in the football team and the school play
+  print(footballTeam.intersection(playCast));
+}
