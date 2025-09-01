@@ -1,0 +1,13 @@
+void main(){
+  //'const' does not support runtime calculations.
+  //Their values are fixed before runtime.
+  const totalDistance = 10; 
+ 
+  var totalTime = 8;
+  
+  //'final' supports runtime calculations.
+  //Their values are determined during runtime.
+  final averageSpeed = totalDistance / totalTime; 
+  
+  print(averageSpeed);
+}
