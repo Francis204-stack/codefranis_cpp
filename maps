@@ -8,4 +8,9 @@ void main() {
   //including another employee to the stated list above
   employees['Lois'] = 8;
   print(employees);
+
+  //removing an employee from the list and assigning its value to another variable
+  var removedValue = employees.remove('Stephen');
+  print (removedValue);
+  print (employees);
 }
