@@ -1,4 +1,6 @@
 void main(){
+  print(1==1);
+
   var a = 50;
   //using the 'runtimeType' operator to tell the data type in a variable
   print(a.runtimeType);
