@@ -18,7 +18,9 @@ void main(){
   //displaying the length of the list in a variable
   print(myMixedList.length);
   
-  /*combining two lists together
-  */you can only combine lists of the same data type
+  /*
+  combining two lists together
+  NB:you can only combine lists of the same data type
+  */
   print(myListAlphaOne + myListAlphaTwo);
 }
