@@ -1,0 +1,13 @@
+void main(){
+  var a = 50;
+  //using the 'runtimeType' operator to tell the data type in a variable
+  print(a.runtimeType);
+  
+  //using the 'is' operator to state whether variable 'a' is a string or not
+  print(a is String);
+  
+  //using the 'assert' function to point out if there's an error 
+  print("BEFORE ASSERT");
+  assert(100 < 9);
+  print("AFTER ASSERT");
+}
