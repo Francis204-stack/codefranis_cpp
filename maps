@@ -11,6 +11,6 @@ void main() {
 
   //removing an employee from the list and assigning its value to another variable
   var removedValue = employees.remove('Stephen');
-  print (removedValue);
-  print (employees);
+  print(removedValue);
+  print(employees);
 }
