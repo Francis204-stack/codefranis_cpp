@@ -1,5 +1,10 @@
 void main(){
-  //listing some elements in a set
+ 
+  /*
+  Sets are unordered collection of unique items.
+  listing some elements in a set below...
+  */
+
   var elements = {'O','K','Ni','Rd'};
   print(elements);
   
@@ -10,4 +15,5 @@ void main(){
   //adding various elements to the set
   elements.addAll(['H','C','Ar','B']);
   print(elements);
+
 }
