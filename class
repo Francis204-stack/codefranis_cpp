@@ -1,0 +1,21 @@
+class human{
+  //instance variables
+  String name = 'Ray';
+  int age = 50;
+  
+  //method
+  //usually a function within a class
+  void introduce(){
+    print("Hello, my name is $name and I'm $age years old.");
+  }
+}
+
+void main(){
+  var human1 = human();
+  
+  //setting up new attribute values
+  human1.name = 'Nick';
+  human1.age = 40;
+  
+  human1.introduce();
+}
