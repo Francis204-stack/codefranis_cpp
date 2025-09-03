@@ -1,0 +1,17 @@
+void main(){
+  var myList = ['b','a','c'];
+  var mySet = {'x','y','z'};
+  var myMap = {'a':0,'b':1,'c':2};
+  
+  for(final item in myList){
+    print(item);
+  }
+  
+   for(final item in mySet){
+    print(item);
+  }
+  
+   for(final key in myMap.keys){
+     print(myMap[key]);
+   }
+}
