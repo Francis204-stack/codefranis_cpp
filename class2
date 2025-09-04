@@ -1,0 +1,24 @@
+class Student{
+  //properties
+  String name;
+  int indexNumber;
+  String programme;
+  
+  //constructor
+  Student(this.name, this.indexNumber, this.programme);
+  
+  //method
+  void displayDetails(){
+    print("Name: $name, Index Number: $indexNumber, Programme: $programme");
+  }
+}
+
+void main(){
+  //creating objects
+  Student learner1 = Student("Samuel", 849897650, "Computer Engineering");
+  Student learner2 = Student("Elijah", 754390654, "Software Engineering");
+  
+  //displaying results
+  learner1.displayDetails();
+  learner2.displayDetails();
+}
