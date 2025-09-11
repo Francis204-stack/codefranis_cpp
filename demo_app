@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 //the main function is the starting point for all our flutter apps
@@ -14,13 +13,18 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class MainPage extends StatefulWidget {
+  @override
+  // ignore: library_private_types_in_public_api
+  _MainPageState createState() => _MainPageState();
+}
 
-class MainPage extends StatelessWidget {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.red, title: Text('Demo')),
-      body: Center(child: Text('Welcome to Demo App!')),
+      body: Center(child: Text('Welcome to the Demo App!')),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red,
         child: Icon(Icons.add),
