@@ -1,0 +1,58 @@
+// ignore_for_file: camel_case_types
+
+import 'package:flutter/material.dart';
+
+//the main function is the starting point for all our flutter apps
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: MainPage());
+  }
+}
+
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+
+class _MainPageState extends State<MainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.green,
+        appBar: AppBar(backgroundColor: Colors.red, title: Text('Francis App')),
+        body: SafeArea(
+          child: Column(
+          //aligning the containers to the center
+            mainAxisAlignment: MainAxisAlignment.center, 
+            children: [
+              Container(
+                height: 100,
+                width: 400,
+                margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+                padding: EdgeInsets.all(20),
+                color: Colors.white,
+                child: Text('Container 1'),
+              ),
+              Container(
+                height: 100,
+                width: 400,
+                margin: EdgeInsets.fromLTRB(20, 30, 20, 30),
+                padding: EdgeInsets.all(20),
+                color: Colors.blue,
+                child: Text('Container 2'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
