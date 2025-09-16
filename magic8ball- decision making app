@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+import 'dart:math';
+
+void main() => runApp(
+      MaterialApp(
+        home: Scaffold(
+          backgroundColor: Colors.blue.shade200,
+          appBar: AppBar(
+            title: Text('Ask Me Anything',
+                style: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                )),
+            backgroundColor: Colors.blue.shade900,
+          ),
+          body: magic8ball(),
+        ),
+      ),
+    );
+
+class magic8ball extends StatefulWidget {
+  const magic8ball({super.key});
+
+  @override
+  State<magic8ball> createState() => _magic8ballState();
+}
+
+class _magic8ballState extends State<magic8ball> {
+  int ballNumber = 1;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: Center(
+            child: TextButton(
+              onPressed: () {
+                setState(
+                  () {
+                    ballNumber = Random().nextInt(5) + 1;
+                  },
+                );
+                print('Button pressed!');
+              },
+              child: Image.asset('images/ball$ballNumber.png'),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
