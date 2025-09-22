@@ -1,3 +1,5 @@
+//a class is simply a blueprint that shows how an object should behave or function. It contains its properties, constructor and a method which work hand-in-hand to achieve a set goal.
+
 class Student{
   //properties
   String name;
